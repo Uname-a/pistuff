@@ -39,7 +39,6 @@ while True:
     gpio.output(23,gpio.LOW)
     gpio.output(24,gpio.HIGH)
     time.sleep(1)
-    
     gpio.output(17,gpio.LOW)
     gpio.output(22,gpio.HIGH)
     time. sleep(1)
