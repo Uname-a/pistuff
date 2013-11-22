@@ -1,9 +1,10 @@
 import RPi.GPIO as gpio
 import time
-import subprocess
-import os
-
+from sys import argv
+script,first = argv
+print (first)
 x = 0
+y = first
 gpio.setmode(gpio.BCM)
 gpio.setup(17,gpio.OUT)
 gpio.setup(4,gpio.OUT)
@@ -12,7 +13,7 @@ gpio.setup(18,gpio.OUT)
 gpio.setup(23,gpio.OUT)
 gpio.setup(24,gpio.OUT)
 gpio.setup(25,gpio.OUT)
-while x< 30:
+while x< y:
     x = x+15
     gpio.output(24,gpio.LOW)
     gpio.output(25,gpio.HIGH)
