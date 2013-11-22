@@ -3,7 +3,7 @@ import time
 from sys import argv
 import os
 import subprocess
-
+gpio.setup.setwarnings(False)
 script,first = argv
 
 x = 0
