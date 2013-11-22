@@ -61,4 +61,4 @@ while x< 30:
     
 
 else:
-    os.system("your command here")
+    os.system("gpio reset")
