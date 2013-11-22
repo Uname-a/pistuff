@@ -5,7 +5,7 @@ import os
 import subprocess
 
 script,first = argv
-print (first)
+print (first, 'seconds')
 x = 0
 y = int(first)
 gpio.setmode(gpio.BCM)
