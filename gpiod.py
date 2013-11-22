@@ -23,45 +23,73 @@ while x< y:
     gpio.output(24,gpio.LOW)
     gpio.output(25,gpio.HIGH)
     time.sleep(1)
+    if x<y:
+        break
     gpio.output(17,gpio.LOW)
     gpio.output(22,gpio.HIGH)
     time. sleep(1)
+    if x<y:
+        break
     gpio.output(22,gpio.LOW)
     gpio.output(4,gpio.HIGH)
     time.sleep(1)
+    if x<y:
+        break
     gpio.output(4,gpio.LOW)
     gpio.output(18,gpio.HIGH)
     time.sleep(1)
+    if x<y:
+        break
     gpio.output(18,gpio.LOW)
     gpio.output(17,gpio.HIGH)
     time.sleep(1)
+    if x<y:
+        break
     gpio.output(25,gpio.LOW)
     gpio.output(23,gpio.HIGH)
     time.sleep(1)
+    if x<y:
+        break
     gpio.output(17,gpio.LOW)
     gpio.output(22,gpio.HIGH)
     time. sleep(1)
+    if x<y:
+        break
     gpio.output(22,gpio.LOW)
     gpio.output(4,gpio.HIGH)
     time.sleep(1)
+    if x<y:
+        break
     gpio.output(4,gpio.LOW)
     gpio.output(18,gpio.HIGH)
     time.sleep(1)
+    if x<y:
+        break
     gpio.output(18,gpio.LOW)
     gpio.output(17,gpio.HIGH)
     time.sleep(1)
+    if x<y:
+        break
     gpio.output(23,gpio.LOW)
     gpio.output(24,gpio.HIGH) 
     time.sleep(1)
+    if x<y:
+        break
     gpio.output(17,gpio.LOW)
     gpio.output(22,gpio.HIGH)
     time. sleep(1)
+    if x<y:
+        break
     gpio.output(22,gpio.LOW)
     gpio.output(4,gpio.HIGH)
     time.sleep(1)
+    if x<y:
+        break
     gpio.output(4,gpio.LOW)
     gpio.output(18,gpio.HIGH)
     time.sleep(1)
+    if x<y:
+        break
     gpio.output(18,gpio.LOW)
     gpio.output(17,gpio.HIGH)
     time.sleep(1)
