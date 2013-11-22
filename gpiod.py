@@ -8,7 +8,8 @@ script,first = argv
 
 x = 0
 y = int(first)
-print ('you chose {} seconds').format(y)
+z= y/15
+print ('You chose {} seconds which is {} cycles').format(y,z)
 gpio.setmode(gpio.BCM)
 gpio.setup(17,gpio.OUT)
 gpio.setup(4,gpio.OUT)
