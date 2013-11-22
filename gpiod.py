@@ -24,6 +24,7 @@ while x< 5:
     time.sleep(1)
     gpio.output(25,gpio.LOW)
     gpio.output(23,gpio.HIGH)
+    x=x+5
     time.sleep(1)
     gpio.output(17,gpio.LOW)
     gpio.output(22,gpio.HIGH)
@@ -37,6 +38,7 @@ while x< 5:
     gpio.output(18,gpio.LOW)
     gpio.output(17,gpio.HIGH)
     time.sleep(1)
+    x=x+5
     gpio.output(23,gpio.LOW)
     gpio.output(24,gpio.HIGH)
     time.sleep(1)
@@ -55,4 +57,4 @@ while x< 5:
     gpio.output(24,gpio.LOW)
     gpio.output(25,gpio.HIGH)
     time.sleep(1)
-    x += 1
+    x = x+5
