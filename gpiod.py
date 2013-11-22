@@ -1,6 +1,7 @@
 import RPi.GPIO as gpio
 import time
 import subprocess
+import os
 
 x = 0
 gpio.setmode(gpio.BCM)
