@@ -1,5 +1,7 @@
 import RPi.GPIO as gpio
 import time
+import subprocess
+
 x = 0
 gpio.setmode(gpio.BCM)
 gpio.setup(17,gpio.OUT)
@@ -9,8 +11,8 @@ gpio.setup(18,gpio.OUT)
 gpio.setup(23,gpio.OUT)
 gpio.setup(24,gpio.OUT)
 gpio.setup(25,gpio.OUT)
-while x< 5:
-    x = x+5
+while x< 30:
+    x = x+15
     gpio.output(24,gpio.LOW)
     gpio.output(25,gpio.HIGH)
     time.sleep(1)
@@ -26,10 +28,8 @@ while x< 5:
     gpio.output(18,gpio.LOW)
     gpio.output(17,gpio.HIGH)
     time.sleep(1)
-    x=x+5
     gpio.output(25,gpio.LOW)
     gpio.output(23,gpio.HIGH)
-    
     time.sleep(1)
     gpio.output(17,gpio.LOW)
     gpio.output(22,gpio.HIGH)
@@ -43,9 +43,8 @@ while x< 5:
     gpio.output(18,gpio.LOW)
     gpio.output(17,gpio.HIGH)
     time.sleep(1)
-    x=x+5
     gpio.output(23,gpio.LOW)
-    gpio.output(24,gpio.HIGH)
+    gpio.output(24,gpio.HIGH) 
     time.sleep(1)
     gpio.output(17,gpio.LOW)
     gpio.output(22,gpio.HIGH)
@@ -60,3 +59,6 @@ while x< 5:
     gpio.output(17,gpio.HIGH)
     time.sleep(1)
     
+
+else:
+    os.system("your command here")
