@@ -1,10 +1,13 @@
 import RPi.GPIO as gpio
 import time
 from sys import argv
+import os
+
 script,first = argv
 print (first)
 x = 0
 y = first
+print (y)
 gpio.setmode(gpio.BCM)
 gpio.setup(17,gpio.OUT)
 gpio.setup(4,gpio.OUT)
