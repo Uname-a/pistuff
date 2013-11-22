@@ -1,5 +1,6 @@
 import RPi.GPIO as gpio
 import time
+x = 0
 gpio.setmode(gpio.BCM)
 gpio.setup(17,gpio.OUT)
 gpio.setup(4,gpio.OUT)
@@ -8,7 +9,7 @@ gpio.setup(18,gpio.OUT)
 gpio.setup(23,gpio.OUT)
 gpio.setup(24,gpio.OUT)
 gpio.setup(25,gpio.OUT)
-while True:
+while x< 5:
     gpio.output(17,gpio.LOW)
     gpio.output(22,gpio.HIGH)
     time. sleep(1)
@@ -54,3 +55,4 @@ while True:
     gpio.output(24,gpio.LOW)
     gpio.output(25,gpio.HIGH)
     time.sleep(1)
+    x += 1
