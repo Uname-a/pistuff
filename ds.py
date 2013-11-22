@@ -1,12 +1,26 @@
-
+x=1
+y=2
 import time
-from sys import argv
-import os
-import subprocess
 
-
-
-x = 0
-y = 10
-z= float(y/15)
-print ('You chose {} seconds which is {} cycles').format(y,z)
+while x< y:
+    x = x+15
+    
+    time.sleep(1)
+    if x < y:
+        print('e')
+        break
+    x = x+15
+    
+    time.sleep(1)
+    
+    if x<y:
+        print('e')
+        break
+    x = x+15
+    
+    time.sleep(1)
+    if x<y:
+        print('e')
+        break
+else:
+    print('D')
