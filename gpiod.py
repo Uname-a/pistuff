@@ -2,12 +2,12 @@ import RPi.GPIO as gpio
 import time
 from sys import argv
 import os
+import subprocess
 
 script,first = argv
 print (first)
 x = 0
-y = first
-print (y)
+y = int(first)
 gpio.setmode(gpio.BCM)
 gpio.setup(17,gpio.OUT)
 gpio.setup(4,gpio.OUT)
